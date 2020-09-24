@@ -1,61 +1,140 @@
 main .landing-section {
-    height: 50vh;
+  height: 50vh;
 }
-main .landing-section{
-    background: url(../source/img/landing1.jpg);
+main .landing-section {
+  background: url(../source/img/landing1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+main .landing-section .landing-container1,
+main .video-section .landing-container2 {
+  width: 50%;
+  margin: auto;
+}
+main .landing-section .landing-container1 {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .landing-section .landing-container1 img {
+  width: 50px;
+}
+main .landing-section .landing-container1 h1 {
+  width: 50%;
+  font-size: 45px;
+  margin-top: 20px;
+}
+main .landing-section .landing-container1 a {
+  color: #fff;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: transparent;
+  transition: 0.3s;
+}
+main .landing-section .landing-container1 a:hover {
+  background: #fff;
+  color: #000;
+}
+/* VIDEO SECTION */
+main .video-section {
+  background: #fff;
+}
+main .video-section .landing-container2 {
+  padding: 50px 0;
+}
+main .video-section .landing-container2 h2 {
+  text-align: center;
+  font-size: 40px;
+  width: 70%;
+  margin: auto;
+}
+main .video-section .landing-container2 p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+main .video-section .landing-container2 .reproductor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 56.25% 0 0 0;
+  margin: 20px 0;
+}
+main .video-section .landing-container2 .reproductor iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+  main .landing-section .landing-container1 h1 {
+    width: 60%;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  main .landing-section .landing-container1,
+  main .video-section .landing-container2 {
+    width: 80%;
+  }
+  main .landing-section .landing-container1 h1 {
+    width: 60%;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .landing-section {
+    background: url(../source/img/landing1-mobile.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
-}
-main .landing-section .landing-container1 {
-    color: #fff;
-    width: 60%;
-    margin: auto;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-main .landing-section .landing-container1 h1{
-    width: 50%;
-    font-size: 45px;
-}
-main .landing-section .landing-container1 a {
-    color: #fff;
-    margin-top: 20px;
-    padding: 5px 10px;
-    border: 2px solid #fff;
-    border-radius: 8px;
-}
-@media only screen and (max-width: 1440px) {
-    main .landing-section .landing-container1 h1{
-        width: 60%;
-        font-size: 40px;
-    }
-}
-@media only screen and (max-width: 768px) {
-    main .landing-section {
-        background: url(../source/img/landing1-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-        height: 100%;
-        padding: 30px 0;
-    }
-    main .landing-section .landing-container1 {
-        width: 80%;
-    }
-    main .landing-section .landing-container1 h1{
-        width: 90%;
-        font-size: 25px;
-    }
+    padding: 30px 0;
+  }
+  main .landing-section .landing-container1 {
+    width: 80%;
+  }
+  main .landing-section .landing-container1 img {
+    width: 30px;
+  }
+  main .landing-section .landing-container1 h1 {
+    width: 90%;
+    font-size: 25px;
+  }
+  main .video-section .landing-container2 {
+    padding: 40px 0;
+  }
+  main .video-section .landing-container2 h2 {
+    font-size: 28px;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 320px) {
-    main .landing-section .landing-container1 h1{
-        font-size: 20px;
-    }
-    main .landing-section .landing-container1 a {
-        margin-top: 10px;
-    }
+  main .landing-section .landing-container1 img {
+    width: 20px;
+  }
+  main .landing-section .landing-container1 h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  main .landing-section .landing-container1 a {
+    margin-top: 10px;
+  }
+  main .video-section .landing-container2 {
+    padding: 30px 0;
+  }
+  main .video-section .landing-container2 h2 {
+    font-size: 22px;
+  }
+  main .video-section .landing-container2 p {
+    font-size: 16px;
+  }
 }
