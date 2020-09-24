@@ -8,7 +8,8 @@ main .landing-section {
   background-position: center center;
 }
 main .landing-section .landing-container1,
-main .video-section .landing-container2 {
+main .video-section .landing-container2,
+main .ofert-section .ofert-container {
   width: 50%;
   margin: auto;
 }
@@ -74,6 +75,108 @@ main .video-section .landing-container2 .reproductor iframe {
   height: 100%;
 }
 
+/* OFERT SECTION */
+main .ofert-section {
+  background: #f4f4f4;
+  /* color: #fff; */
+}
+main .ofert-section .ofert-container {
+  padding: 50px 0;
+  text-align: center;
+}
+main .ofert-section .ofert-container span {
+  font-size: 24px;
+}
+main .ofert-section .ofert-container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 20px 0;
+}
+main .ofert-section .ofert-container p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+main .ofert-section .ofert-container h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+main .ofert-section .ofert-container .plan-cards {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+main .ofert-section .ofert-container .plan-cards .card {
+  background: #fff;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #474747;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+main .ofert-section .ofert-container .plan-cards .card h3 {
+  font-size: 25px;
+}
+main .ofert-section .ofert-container .plan-cards .card .icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: deepskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+main .ofert-section .ofert-container .plan-cards .card .icon img {
+  width: 40px;
+}
+main .ofert-section .ofert-container .plan-cards .card h5 {
+  font-size: 40px;
+}
+main .ofert-section .ofert-container .plan-cards .card .price {
+  background: deepskyblue;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  color: #fff;
+}
+main .ofert-section .ofert-container .plan-cards .card h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+main .ofert-section .ofert-container .plan-cards .card .list-services {
+  padding: 20px 0;
+  width: 70%;
+  text-align: start;
+}
+main .ofert-section .ofert-container .plan-cards .card .list-services ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+main .ofert-section .ofert-container .plan-cards .card a {
+  color: #fff;
+  margin: 10px 0 20px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background: deepskyblue;
+  border-radius: 20px;
+}
+main .ofert-section .ofert-container .plan-cards .card p {
+  font-size: 16px;
+  width: 90%;
+}
+main .ofert-section .ofert-container h3 {
+  font-size: 34px;
+  margin-top: 40px;
+}
+main .ofert-section .ofert-container p {
+  margin: 20px 0;
+}
+
 @media only screen and (max-width: 1440px) {
   main .landing-section .landing-container1 h1 {
     width: 60%;
@@ -85,9 +188,21 @@ main .video-section .landing-container2 .reproductor iframe {
   main .video-section .landing-container2 {
     width: 80%;
   }
+  main .ofert-section .ofert-container {
+    width: 100%;
+  }
   main .landing-section .landing-container1 h1 {
     width: 60%;
     font-size: 40px;
+  }
+  main .ofert-section .ofert-container span,
+  main .ofert-section .ofert-container h2,
+  main .ofert-section .ofert-container h4,
+  main .ofert-section .ofert-container h3,
+  main .ofert-section .ofert-container p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -98,9 +213,6 @@ main .video-section .landing-container2 .reproductor iframe {
     background-position: center center;
     height: 100%;
     padding: 30px 0;
-  }
-  main .landing-section .landing-container1 {
-    width: 80%;
   }
   main .landing-section .landing-container1 img {
     width: 30px;
@@ -115,6 +227,112 @@ main .video-section .landing-container2 .reproductor iframe {
   main .video-section .landing-container2 h2 {
     font-size: 28px;
     width: 100%;
+  }
+  main .ofert-section .ofert-container {
+    width: 90%;
+  }
+  main .ofert-section .ofert-container span,
+  main .ofert-section .ofert-container h2,
+  main .ofert-section .ofert-container h4,
+  main .ofert-section .ofert-container h3,
+  main .ofert-section .ofert-container p {
+    width: 90%;
+    margin: auto;
+  }
+  main .ofert-section .ofert-container .plan-cards {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  /* OFERT SECTION */
+  main .ofert-section .ofert-container {
+    padding: 30px 0;
+  }
+  main .ofert-section .ofert-container span {
+    font-size: 18px;
+  }
+  main .ofert-section .ofert-container h2 {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  main .ofert-section .ofert-container p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  main .ofert-section .ofert-container h4 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  main .ofert-section .ofert-container .plan-cards .card {
+    background: #fff;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    color: #474747;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  main .ofert-section .ofert-container .plan-cards .card h3 {
+    font-size: 25px;
+  }
+  main .ofert-section .ofert-container .plan-cards .card .icon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  main .ofert-section .ofert-container .plan-cards .card .icon img {
+    width: 40px;
+  }
+  main .ofert-section .ofert-container .plan-cards .card h5 {
+    font-size: 40px;
+  }
+  main .ofert-section .ofert-container .plan-cards .card .price {
+    background: deepskyblue;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    color: #fff;
+  }
+  main .ofert-section .ofert-container .plan-cards .card h6 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  main .ofert-section .ofert-container .plan-cards .card .list-services {
+    padding: 20px 0;
+    width: 70%;
+    text-align: start;
+  }
+  main .ofert-section .ofert-container .plan-cards .card .list-services ul li {
+    list-style: none;
+    margin: 5px 0;
+  }
+  main .ofert-section .ofert-container .plan-cards .card a {
+    color: #fff;
+    margin: 10px 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background: deepskyblue;
+    border-radius: 20px;
+  }
+  main .ofert-section .ofert-container .plan-cards .card p {
+    font-size: 16px;
+    width: 90%;
+  }
+  main .ofert-section .ofert-container h3 {
+    font-size: 34px;
+    margin-top: 40px;
+  }
+  main .ofert-section .ofert-container p {
+    margin: 20px 0;
   }
 }
 @media only screen and (max-width: 320px) {
