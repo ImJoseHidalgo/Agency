@@ -5,3 +5,9 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
+a {
+  text-decoration: none;
+}
+body#inicio header .menu ul li:nth-child(1) a::before {
+  transform: scaleX(1);
+}
