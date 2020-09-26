@@ -82,7 +82,7 @@ header .menu-button {
     border-bottom: 1px solid lightgray;
     margin-top: -150%;
     padding: 0;
-    transition: .5s cubic-bezier(1,0,0,1);
+    transition: .3s ;
   }
   header .menu.show {
     margin-top: 0;

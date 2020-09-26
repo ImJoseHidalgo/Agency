@@ -7,14 +7,11 @@ main .landing-section {
   background-size: 100%;
   background-position: center center;
 }
-main .landing-section .landing-container1,
-main .video-section .landing-container2,
-main .ofert-section .ofert-container,
-main .explain-section .explain-container {
-  width: 50%;
+main .container {
+  width: 55%;
   margin: auto;
 }
-main .landing-section .landing-container1 {
+main .landing-section .container {
   color: #fff;
   height: 100%;
   display: flex;
@@ -22,15 +19,15 @@ main .landing-section .landing-container1 {
   justify-content: center;
   align-items: flex-start;
 }
-main .landing-section .landing-container1 img {
+main .landing-section .container img {
   width: 50px;
 }
-main .landing-section .landing-container1 h1 {
+main .landing-section .container h1 {
   width: 50%;
   font-size: 45px;
   margin-top: 20px;
 }
-main .landing-section .landing-container1 a {
+main .landing-section .container a {
   color: #fff;
   margin-top: 20px;
   padding: 5px 10px;
@@ -39,7 +36,7 @@ main .landing-section .landing-container1 a {
   background: transparent;
   transition: 0.3s;
 }
-main .landing-section .landing-container1 a:hover {
+main .landing-section .container a:hover {
   background: #fff;
   color: #000;
 }
@@ -47,28 +44,29 @@ main .landing-section .landing-container1 a:hover {
 main .video-section {
   background: #fff;
 }
-main .video-section .landing-container2 {
+main .video-section .container {
   padding: 50px 0;
 }
-main .video-section .landing-container2 h2 {
+main .video-section .container h2 {
   text-align: center;
   font-size: 40px;
   width: 70%;
   margin: auto;
 }
-main .video-section .landing-container2 p {
+main .video-section .container p {
   margin: 20px 0;
   font-size: 18px;
 }
-main .video-section .landing-container2 .reproductor {
+main .video-section .container .reproductor {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   padding: 56.25% 0 0 0;
   margin: 20px 0;
+  background: rosybrown;
 }
-main .video-section .landing-container2 .reproductor iframe {
+main .video-section .container .reproductor iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,33 +78,33 @@ main .video-section .landing-container2 .reproductor iframe {
 main .ofert-section {
   background: #f4f4f4;
 }
-main .ofert-section .ofert-container {
+main .ofert-section .container {
   padding: 50px 0;
   text-align: center;
 }
-main .ofert-section .ofert-container span {
+main .ofert-section .container span {
   font-size: 24px;
 }
-main .ofert-section .ofert-container h2 {
+main .ofert-section .container h2 {
   font-weight: 400;
   font-size: 40px;
   margin: 20px 0;
 }
-main .ofert-section .ofert-container p {
+main .ofert-section .container p {
   font-size: 20px;
   margin-bottom: 10px;
 }
-main .ofert-section .ofert-container h4 {
+main .ofert-section .container h4 {
   font-size: 24px;
   font-weight: 400;
 }
-main .ofert-section .ofert-container .plan-cards {
+main .ofert-section .container .plan-cards {
   margin: 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
 }
-main .ofert-section .ofert-container .plan-cards .card {
+main .ofert-section .container .plan-cards .card {
   background: #fff;
   padding: 30px 0;
   display: flex;
@@ -117,10 +115,10 @@ main .ofert-section .ofert-container .plan-cards .card {
   border-radius: 10px;
   margin: 10px 0;
 }
-main .ofert-section .ofert-container .plan-cards .card h3 {
+main .ofert-section .container .plan-cards .card h3 {
   font-size: 25px;
 }
-main .ofert-section .ofert-container .plan-cards .card .icon {
+main .ofert-section .container .plan-cards .card .icon {
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -130,24 +128,24 @@ main .ofert-section .ofert-container .plan-cards .card .icon {
   align-items: center;
   margin: 20px 0;
 }
-main .ofert-section .ofert-container .plan-cards .card .icon img {
+main .ofert-section .container .plan-cards .card .icon img {
   width: 40px;
 }
-main .ofert-section .ofert-container .plan-cards .card h5 {
+main .ofert-section .container .plan-cards .card h5 {
   font-size: 40px;
 }
-main .ofert-section .ofert-container .plan-cards .card .price {
+main .ofert-section .container .plan-cards .card .price {
   background: #00b6cc;
   width: 100%;
   padding: 10px 0;
   margin: 10px 0;
   color: #fff;
 }
-main .ofert-section .ofert-container .plan-cards .card h6 {
+main .ofert-section .container .plan-cards .card h6 {
   font-size: 18px;
   font-weight: 400;
 }
-main .ofert-section .ofert-container .plan-cards .card .list-services {
+main .ofert-section .container .plan-cards .card .list-services {
   padding: 20px 0;
   width: 90%;
   display: flex;
@@ -155,18 +153,18 @@ main .ofert-section .ofert-container .plan-cards .card .list-services {
   justify-content: center;
   align-items: center;
 }
-main .ofert-section .ofert-container .plan-cards .card .list-services ul li {
+main .ofert-section .container .plan-cards .card .list-services ul li {
   margin: 5px 0;
   list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-main .ofert-section .ofert-container .plan-cards .card .list-services ul li img {
+main .ofert-section .container .plan-cards .card .list-services ul li img {
   width: 10px;
   margin-right: 5px;
 }
-main .ofert-section .ofert-container .plan-cards .card a {
+main .ofert-section .container .plan-cards .card a {
   color: #fff;
   margin: 10px 0 20px;
   font-size: 20px;
@@ -175,21 +173,21 @@ main .ofert-section .ofert-container .plan-cards .card a {
   background: #00b6cc;
   border-radius: 20px;
 }
-main .ofert-section .ofert-container .plan-cards .card:last-child .icon,
-main .ofert-section .ofert-container .plan-cards .card:last-child .price,
-main .ofert-section .ofert-container .plan-cards .card:last-child a {
+main .ofert-section .container .plan-cards .card:last-child .icon,
+main .ofert-section .container .plan-cards .card:last-child .price,
+main .ofert-section .container .plan-cards .card:last-child a {
   background: #e7005f;
 }
-main .ofert-section .ofert-container .plan-cards .card p {
+main .ofert-section .container .plan-cards .card p {
   font-size: 16px;
   width: 90%;
   font-style: italic;
 }
-main .ofert-section .ofert-container h3 {
+main .ofert-section .container h3 {
   font-size: 34px;
   margin-top: 40px;
 }
-main .ofert-section .ofert-container p {
+main .ofert-section .container p {
   margin: 20px 0;
 }
 
@@ -199,54 +197,104 @@ main .explain-section {
   color: #fff;
   padding: 50px 0;
 }
-main .explain-section .explain-container {
+main .explain-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-main .explain-section .explain-container .card h3{
+main .explain-section .container .card h3{
   font-size: 22px;
 }
-main .explain-section .explain-container .card p{
+main .explain-section .container .card p{
   margin-top: 20px;
 }
+
+/* FEATURES SECTION */
+main .features-section {
+  background: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+  color: #474747;
+}
+main .features-section .container h3 {
+  color: #7cbd1e;
+  font-size: 30px;
+}
+main .features-section .container h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 10px 0;
+}
+main .features-section .container p {
+  width: 70%;
+  margin: 10px auto;
+  font-size: 18px;
+}
+main .features-section .container .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+main .features-section .container .cards .card {
+  background: #fff;
+  padding: 20px 0;
+  border-radius: 20px 20px 20px 50px;
+  box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.05);
+}
+main .features-section .container .cards .card img {
+  width: 45px;
+}
+main .features-section .container .cards .card h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+main .features-section .container .cards .card p {
+  width: 85%;
+}
 @media only screen and (max-width: 1440px) {
-  main .landing-section .landing-container1,
-  main .video-section .landing-container2 {
+  main .landing-section .container,
+  main .video-section .container {
     width: 60%;
   }
-  main .landing-section .landing-container1 h1 {
+  main .landing-section .container h1 {
     width: 50%;
     font-size: 40px;
   }
-  main .ofert-section .ofert-container span,
-  main .ofert-section .ofert-container h2,
-  main .ofert-section .ofert-container h4,
-  main .ofert-section .ofert-container h3,
-  main .ofert-section .ofert-container p {
+  main .ofert-section .container span,
+  main .ofert-section .container h2,
+  main .ofert-section .container h4,
+  main .ofert-section .container h3,
+  main .ofert-section .container p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
   /* EXPLAIN SECTION */
-  main .ofert-section .ofert-container,
-  main .explain-section .explain-container {
+  main .container,
+  main .ofert-section .container,
+  main .explain-section .container {
     width: 70%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  
-  main .landing-section .landing-container1 h1 {
+  main .container,
+  main .landing-section .container,
+  main .video-section .container,
+  main .explain-section .container {
+    width: 80%;
+  }
+  main .landing-section .container h1 {
     width: 60%;
     font-size: 40px;
   }
-  main .ofert-section .ofert-container {
+  main .ofert-section .container {
     width: 100%;
   }
-  /* EXPLAIN SECTION */
-  main .explain-section .explain-container {
-    width: 80%;
-  }
+  /* FEATURES SECTION */
+main .features-section .container .cards {
+  grid-template-columns: 1fr 1fr;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -258,136 +306,152 @@ main .explain-section .explain-container .card p{
     height: 100%;
     padding: 30px 0;
   }
-  main .landing-section .landing-container1 img {
+  main .landing-section .container img {
     width: 30px;
   }
-  main .landing-section .landing-container1 h1 {
+  main .landing-section .container h1 {
     width: 90%;
     font-size: 25px;
   }
-  main .video-section .landing-container2 {
+  main .video-section .container {
     padding: 40px 0;
   }
-  main .video-section .landing-container2 h2 {
+  main .video-section .container h2 {
     font-size: 28px;
     width: 100%;
   }
-  main .ofert-section .ofert-container {
+  main .ofert-section .container {
     width: 90%;
   }
-  main .ofert-section .ofert-container span,
-  main .ofert-section .ofert-container h2,
-  main .ofert-section .ofert-container h4,
-  main .ofert-section .ofert-container h3,
-  main .ofert-section .ofert-container p {
+  main .ofert-section .container span,
+  main .ofert-section .container h2,
+  main .ofert-section .container h4,
+  main .ofert-section .container h3,
+  main .ofert-section .container p {
     width: 90%;
     margin: auto;
   }
-  main .ofert-section .ofert-container .plan-cards {
+  main .ofert-section .container .plan-cards {
     margin: 20px 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
   /* OFERT SECTION */
-  main .ofert-section .ofert-container {
+  main .ofert-section .container {
     padding: 30px 0;
   }
-  main .ofert-section .ofert-container span {
+  main .ofert-section .container span {
     font-size: 16px;
     font-weight: 300;
   }
-  main .ofert-section .ofert-container h2 {
+  main .ofert-section .container h2 {
     font-size: 20px;
     margin: 20px auto;
   }
-  main .ofert-section .ofert-container p {
+  main .ofert-section .container p {
     font-size: 16px;
     margin: 20px auto;
   }
-  main .ofert-section .ofert-container h4 {
+  main .ofert-section .container h4 {
     font-size: 16px;
   }
-  main .ofert-section .ofert-container .plan-cards .card {
+  main .ofert-section .container .plan-cards .card {
     padding: 30px 0;
   }
-  main .ofert-section .ofert-container .plan-cards .card h3 {
+  main .ofert-section .container .plan-cards .card h3 {
     font-size: 20px;
   }
-  main .ofert-section .ofert-container .plan-cards .card .icon {
+  main .ofert-section .container .plan-cards .card .icon {
     width: 60px;
     height: 60px;
     margin: 10px 0;
   }
-  main .ofert-section .ofert-container .plan-cards .card .icon img {
+  main .ofert-section .container .plan-cards .card .icon img {
     width: 30px;
   }
-  main .ofert-section .ofert-container .plan-cards .card h5 {
+  main .ofert-section .container .plan-cards .card h5 {
     font-size: 30px;
   }
-  main .ofert-section .ofert-container .plan-cards .card .price {
+  main .ofert-section .container .plan-cards .card .price {
     font-size: 25px;
   }
-  main .ofert-section .ofert-container .plan-cards .card h6 {
+  main .ofert-section .container .plan-cards .card h6 {
     font-size: 16px;
   }
   
-  main .ofert-section .ofert-container .plan-cards .card a {
+  main .ofert-section .container .plan-cards .card a {
     margin: 0 0 20px;
     font-size: 16px;
   }
-  main .ofert-section .ofert-container h3 {
+  main .ofert-section .container h3 {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
-  main .landing-section .landing-container1,
-  main .video-section .landing-container2 {
+  main .landing-section .container,
+  main .video-section .container {
     width: 80%;
   }
-  main .landing-section .landing-container1 h1 {
+  main .landing-section .container h1 {
     width: 70%;
     font-size: 20px;
   }
   /* EXPLAIN SECTION */
-  main .explain-section .explain-container {
+  main .explain-section .container {
     width: 80%;
   }
-  main .explain-section .explain-container {
+  main .explain-section .container {
     grid-template-columns: 1fr;
   }
-  main .explain-section .explain-container .card h3{
+  main .explain-section .container .card h3{
     font-size: 22px;
   }
-  main .explain-section .explain-container .card p{
+  main .explain-section .container .card p{
     margin-top: 18px;
   }
+  /* FEATURES SECTION */
+main .features-section .container h3 {
+  font-size: 24px;
+}
+main .features-section .container h2 {
+  font-size: 24px;
+}
+main .features-section .container p {
+  width: 100%;
+  font-size: 16px;
+}
+main .features-section .container .cards {
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+}
+
 }
 @media only screen and (max-width: 320px) {
-  main .landing-section .landing-container1 h1 {
+  main .landing-section .container h1 {
     width: 80%;
     font-size: 20px;
   }
-  main .landing-section .landing-container1 img {
+  main .landing-section .container img {
     width: 20px;
   }
-  main .landing-section .landing-container1 h1 {
+  main .landing-section .container h1 {
     font-size: 20px;
     margin-top: 10px;
   }
-  main .landing-section .landing-container1 a {
+  main .landing-section .container a {
     margin-top: 10px;
   }
-  main .video-section .landing-container2 {
+  main .video-section .container {
     padding: 30px 0;
   }
-  main .video-section .landing-container2 h2 {
+  main .video-section .container h2 {
     font-size: 22px;
   }
-  main .video-section .landing-container2 p {
+  main .video-section .container p {
     font-size: 16px;
   }
-  main .ofert-section .ofert-container .plan-cards .card .list-services {
+  main .ofert-section .container .plan-cards .card .list-services {
     width: 90%;
     font-size: 14px;
   }
