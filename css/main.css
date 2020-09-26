@@ -252,6 +252,53 @@ main .features-section .container .cards .card h4 {
 main .features-section .container .cards .card p {
   width: 85%;
 }
+/* ACTION SECTION */
+main .action-section {
+  color: #fff;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+main .action-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #7cbd1e;
+}
+main .action-section .container {
+  display: flex;
+  align-items: center;
+  padding:20px 0 50px;
+}
+main .action-section .container .action h2 {
+  font-size: 40px;
+}
+main .action-section .container .action h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+main .action-section .container .action p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+main .action-section .container .action a {
+  color: #7cbd1e;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+main .action-section .container img {
+  width: 500px;
+  height: 500px;
+  margin-top: -50px;
+  border-radius: 300px 70px 70px 70px;
+}
 @media only screen and (max-width: 1440px) {
   main .landing-section .container,
   main .video-section .container {
@@ -292,9 +339,19 @@ main .features-section .container .cards .card p {
     width: 100%;
   }
   /* FEATURES SECTION */
-main .features-section .container .cards {
-  grid-template-columns: 1fr 1fr;
+ main .features-section .container .cards {
+   grid-template-columns: 1fr 1fr;
+ }
+ /* ACTION SECTION */
+ main .action-section .container .action p {
+  width: 80%;
 }
+ main .action-section .container img {
+   width: 350px;
+   height: 350px;
+   margin-top: -40px;
+   border-radius: 230px 70px 70px 70px;
+ }
 }
 
 @media only screen and (max-width: 768px) {
@@ -387,6 +444,22 @@ main .features-section .container .cards {
   main .ofert-section .container h3 {
     font-size: 26px;
   }
+  /* ACTION SECTION */
+ main .action-section .container .action h2 {
+   font-size: 30px;
+ }
+ main .action-section .container .action h3 {
+   font-size: 20px;
+ }
+ main .action-section .container .action p {
+   width: 90%;
+ }
+ main .action-section .container img {
+  width: 300px;
+  height: 300px;
+  margin-top: -20px;
+  border-radius: 200px 70px 70px 70px;
+ }
 }
 @media only screen and (max-width: 600px) {
   main .landing-section .container,
@@ -424,6 +497,23 @@ main .features-section .container p {
 main .features-section .container .cards {
   grid-template-columns: 1fr;
   margin-top: 30px;
+}
+ /* ACTION SECTION */
+ main .action-section .container {
+   flex-direction: column;
+   text-align: center;
+ }
+ main .action-section .container .action h2 {
+  font-size: 30px;
+}
+main .action-section .container .action h3 {
+  font-size: 24px;
+}
+main .action-section .container .action p {
+  width: 100%;
+}
+main .action-section .container img {
+ margin-top: 50px;
 }
 
 }
