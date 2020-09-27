@@ -393,6 +393,77 @@ main .services-section .container .cards .card p {
   color: #474747;
   font-size: 16px;
 }
+
+/* PAYMENTS SECTION */
+main .payments-section {
+  background: #fdd247;
+  text-align: center;
+  padding: 50px 0;
+  color: #474747;
+}
+main .payments-section .container h3:first-child {
+  font-size: 40px;
+  font-weight: 400;
+}
+main .payments-section .container h3 {
+  font-size: 40px;
+}
+main .payments-section .container .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+main .payments-section .container .cards .card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+main .payments-section .container .cards .card img {
+  width: 100%;
+}
+main .payments-section .container .cards .card h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+main .payments-section .container .cards .card p {
+  margin: 5px 0;
+}
+
+/* ADVANTAGE SECTION */
+main .advantage-section {
+  background: #1569ae;
+  color: #fff;
+  padding: 50px 0;
+}
+main .advantage-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .advantage-section .container .text h5 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+main .advantage-section .container .text h3 {
+  font-size: 40px;
+  font-weight: 400;
+  width: 70%;
+  margin: 10px 0 30px;
+  line-height: 50px;
+}
+main .advantage-section .container .text a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+main .advantage-section .container .reproductor {
+  width: 300px;
+  background: cornsilk;
+  height: 200px;
+}
 @media only screen and (max-width: 1440px) {
   main .landing-section .container,
   main .video-section .container {
@@ -456,6 +527,11 @@ main .services-section .container .cards .card p {
   }
   main .services-section .container p {
     font-size: 16px;
+  }
+  /* PAYMENTS SECTION */
+  main .payments-section .container .cards {
+    grid-gap: 10px;
+    margin-top: 30px;
   }
 }
 
@@ -565,6 +641,25 @@ main .services-section .container .cards .card p {
     margin-top: -20px;
     border-radius: 200px 70px 70px 70px;
   }
+  /* SERVICES SECTION */
+  main .services-section .container .cards {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* PAYMENTS SECTION */
+  main .payments-section .container .cards {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* ADVANTAGE SECTION */
+  main .advantage-section .container .text h5 {
+    font-size: 26px;
+  }
+  main .advantage-section .container .text h3 {
+    font-size: 30px;
+    margin: 10px 0 20px;
+    line-height: 40px;
+  }
 }
 @media only screen and (max-width: 600px) {
   main .landing-section .container,
@@ -643,6 +738,34 @@ main .services-section .container .cards .card p {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     margin: 30px 0 0;
+  }
+  /* PAYMENTS SECTION */
+  main .payments-section {
+    padding: 30px 0;
+  }
+  main .payments-section .container h3:first-child {
+    font-size: 36px;
+  }
+  main .payments-section .container h3 {
+    font-size: 30px;
+  }
+  main .payments-section .container .cards {
+    grid-template-columns: 1fr;
+  }
+  /* ADVANTAGE SECTION */
+  main .advantage-section {
+    padding: 30px 0;
+    text-align: center;
+  }
+  main .advantage-section .container {
+    flex-direction: column;
+  }
+  main .advantage-section .container .text h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+  main .advantage-section .container .reproductor {
+    margin-top: 30px;
   }
 }
 @media only screen and (max-width: 320px) {
